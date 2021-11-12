@@ -1,0 +1,471 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    flex-wrap: wrap;
+}
+
+header.main-header{
+    background-color: #EAC926;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+header h2.copy-header{
+    width:100%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header div form.search-form{
+    width: 50%;
+    display: flex;
+    }
+
+header div form input.search-input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-style: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 90%;
+    margin: 12px 0px;
+}
+
+button.search-button{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+    border-style: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 10%;
+    margin: 12px 0px;
+}
+
+header div.burger-menu{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+a.burger-buttom {
+    display: block;
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+}
+
+header nav.main-navbar{
+    display: none;
+}
+
+header nav.main-navbar ul{
+    list-style: none;
+}
+
+header nav.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;   
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+/*CSS para register.html y login.html*/
+
+form.create-form, .login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 170px;
+}
+
+form.login-form{
+    height: 380px;
+}
+
+form.create-form div.user-type div{
+    color:rgba(7, 7, 7, 0.719)   
+}
+
+form.create-form ul.category-list li label{
+    color: rgba(7, 7, 7, 0.747)
+}
+
+form input{
+    margin: 8px 0px;
+}
+
+form input.text {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    padding: 0px 0px 0px 10px;
+    background-color: #fff;
+    color:gray;
+}
+
+form div.user-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5px 0px;
+}
+
+form ul.category-list{
+    list-style: none;
+}
+
+h4.form-text{
+    margin: 10px 0px;
+}
+
+form button.form-button {
+    
+    background-color:#1259c3;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    margin: 5px 3px;
+}
+
+
+/* FOOTER*/
+
+footer{
+    background-color: white;
+    padding: 20px 40px;
+}
+
+footer div{
+    display: block;
+    margin:auto;
+    text-align: center;
+    max-width: 240px;
+}
+
+footer div i{
+    color: #1259c3;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+footer div h4{
+    color: #666;
+    margin:6px 0px;
+
+}
+footer div p{
+    color: grey
+}
+
+@media (min-width: 419px){
+
+    header.main-header{
+        width: 100%;
+    }
+
+    header .top-header{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    header div.logo{
+        width: 30%;
+    }
+
+    header div form.search-form{
+        width: 30%;
+    }
+
+    header div h2.copy-header{
+        width: 30%;
+        font-weight: 200;
+        font-size: 11px;
+    }
+
+    header nav.main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav.main-navbar ul{
+        display: flex;
+    }
+
+    header nav.main-navbar li{
+        margin: 0px 5px;
+    }
+
+    header nav.main-navbar li a{
+        font-size: 7px;
+        margin:0px 5px 10px 5px;
+    }
+    header nav.main-navbar li a i{
+        font-size: 6px;
+    }
+
+    section.banner img{
+        margin-top: 95px;
+    }
+
+    main{
+        margin-top: 0;
+    }
+
+    main section article:hover .description{
+        display: block;
+    }
+
+    main section article i{
+        transition: all 450ms;
+    }
+
+    main section article i:hover{
+        transform: rotate(360deg);
+    }
+
+
+    main section article{
+        box-shadow: none;   
+        width: 46%;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    div.products{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    form.create-form, .login-form{
+        margin-top: 90px;
+    }
+
+    form button.form-button:hover {
+        background-color: #0022AA;
+    }
+
+    footer div i:hover{
+        color: #0022AA;
+    }
+
+
+}
+
+@media (min-width: 769px){
+
+    header div h2.copy-header{
+        font-size: 11px;
+    }
+
+
+    header nav.main-navbar li a{
+        font-size: 12px;
+    }
+
+    header nav.main-navbar li a i{
+        font-size: 8px;
+    }
+
+    header nav.main-navbar li a i{
+        font-size: 12px;
+    }
+
+    main section article{
+        width: 23%;
+    }
+
+    div.products{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    form.create-form, .login-form{
+        margin-top: 150px;
+    }
+
+    /*FOOTER 770*/
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer div{
+        width: 227px;
+        max-width: 228px;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .search-form{
+        max-width: 300px;
+        height: 60px;
+    }
+
+    header .top-header, header nav.main-navbar{
+        max-width: 1400px;
+        margin: auto;
+        align-items: center;
+    }
+
+    header div h2.copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    header nav.main-navbar li{
+        margin: 0px 10px;
+    }
+
+    header nav.main-navbar li a{
+        font-size: 19px;
+    }
+
+    header nav.main-navbar li a i{
+        font-size: 16px;
+    }
+
+    form.create-form, .login-form{
+        margin-top: 170px;
+    }
+
+}
